@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import MessagePage from "../components/MessagePage.vue";
 import NotificationsPage from "../components/NotifcationsPage.vue";
-import ProfilePage from "../components/ProfilePage.vue";
+// import ProfilePage from "../components/ProfilePage.vue";
 
 const routes = [
   {
@@ -35,25 +35,25 @@ const routes = [
   },
 ];
 
-const routes2 = [
-  {
-    path: "/Profile",
-    name: "Profile",
-    component: ProfilePage,
-    iconClass: "fa-solid fa-user",
-    mainMenu: true,
-  },
-];
+// const routes2 = [
+//   {
+//     path: "/Profile",
+//     name: "Profile",
+//     component: ProfilePage,
+//     iconClass: "fa-solid fa-user",
+//     mainMenu: true,
+//   },
+// ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
 });
 
-const router2 = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes2,
-});
+// const router2 = createRouter({
+//   history: createWebHistory(process.env.BASE_URL),
+//   routes2,
+// });
 
 export default router;
 export { router2 };
