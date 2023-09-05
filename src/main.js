@@ -1,7 +1,6 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
-import router2 from "./router2";
 import store from "./store";
 
 import "./assets/tailwind.css";
@@ -19,5 +18,4 @@ createApp(App)
   .component("font-awesome-icon", FontAwesomeIcon)
   .use(store)
   .use(router)
-  .use(router2)
   .mount("#app");

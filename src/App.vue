@@ -34,22 +34,18 @@
 <script>
 import { ref, onBeforeMount } from "vue";
 import { useRouter } from "vue-router";
-import { router2 } from "./router2";
 
 export default {
   setup() {
     const routes = ref([]);
-    const routes2 = ref([]);
     const router = useRouter();
 
     onBeforeMount(() => {
       routes.value = router.options.routes.filter((r) => r.mainMenu);
-      routes2.value = router2.options.routes2.filter((r) => r.mainMenu);
     });
 
     return {
-      routes,
-      router2,
+      routes
     };
   },
 };
